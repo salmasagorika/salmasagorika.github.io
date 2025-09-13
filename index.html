@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salma Akter</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+  <style>
+    /* Custom cursor styles commented out to use default cursor
+    html, body {
+      cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><path d='M8 0 L16 12 L12 12 L8 4 L4 12 L0 12 Z' fill='%231a365d' transform='rotate(-5 8 8)'/></svg>"), auto;
+    }
+    
+    a, button, .btn, .nav-link, .carousel-control, .indicator {
+      cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><path d='M8 0 L16 12 L12 12 L8 4 L4 12 L0 12 Z' fill='%231a365d' transform='rotate(-5 8 8)'/></svg>"), pointer;
+    }
+    */
+
+    /* Remove image scale on card hover for all gateway cards */
+    /* .gateway-card:hover .gateway-card__image { transform: scale(1.05); } */
+  </style>
+</head>
+<body>
+  <div id="top"></div>
+  <!-- Main container wrapping everything -->
+  <div class="main-container">
+    
+    <!-- Sidebar Container -->
+    <div class="sidebar-container">
+      <aside class="sidebar">
+        <!-- Profile section (fixed) -->
+        <div class="profile">
+          <div class="profile-image">
+            <img src="images/salma.jpg" alt="Salma Akter">
+          </div>
+          <h1 class="profile-name">Salma Akter</h1>
+          
+          <div class="profile-buttons">
+            <button class="btn btn-primary" id="cvButton">CV</button>
+            <a href="#" data-email="salmasagorika105@gmail.com" class="btn btn-secondary email-link">Email</a>
+          </div>
+        </div>
+        
+        <!-- Navigation section (scrollable) -->
+        <nav class="nav">
+          <div class="nav-container">
+            <ul>
+              <li><a href="#top" class="nav-link active">About</a></li>
+              <li><a href="#research-interests" class="nav-link">Research Interests</a></li>
+              <li><a href="#research" class="nav-link">Research Experience</a></li>
+              <li><a href="#conference" class="nav-link">Conferences</a></li>
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#fieldtrips" class="nav-link">Field Works</a></li>
+              <li><a href="#education" class="nav-link">Education</a></li>
+              <li><a href="#beyond" class="nav-link">Beyond Academics</a></li>
+              <li><a href="#references" class="nav-link">References</a></li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+    </div>
+
+    <!-- Content Container -->
+    <div class="content-container">
+      <main class="content">
+        <div class="profile profile-main">
+          <div class="profile-image">
+            <img src="images/salma.jpg" alt="Salma Akter">
+          </div>
+          <h1 class="profile-name">Salma Akter</h1>
+          <div class="profile-buttons">
+            <button class="btn btn-primary" id="cvButtonMain">CV</button>
+            <a href="#" data-email="salmasagorika105@gmail.com" class="btn btn-secondary email-link">Email</a>
+          </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+          <h2 class="section-title">About</h2>
+          <div class="section-content">
+            <p class="justified-paragraph">I am a dedicated and curious learner with a strong passion for marine science, particularly in the field of benthic ecology. My research experience has focused on benthic communities and their response to environmental change, exploring how shifts in diversity and structure can reflect the health of marine ecosystems. Beyond research, I am enthusiastic about continuous learning, creative problem-solving, and working with new ideas. I enjoy exploring scientific writing, data analysis, and presenting complex topics in a clear and meaningful way. My academic journey has shaped me into someone who values both detail-oriented research and the broader perspective of environmental conservation. I aspire to contribute not only as a researcher in marine science but also as a passionate individual who is eager to grow, collaborate, and make a positive impact through knowledge and dedication.</p>
+          </div>
+        </section>
+
+        <!-- Research Interests Section -->
+        <section id="research-interests" class="section">
+          <h2 class="section-title">Research Interests</h2>
+          <div class="section-content">
+            <div class="interest-item">
+              <div class="interest-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+              </div>
+              <div class="interest-content">
+                <h3>Geographic Information Systems (GIS)</h3>
+                <p>Spatial analysis, cartography, and geospatial data management</p>
+              </div>
+            </div>
+            
+            <div class="interest-item">
+              <div class="interest-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17a2 2 0 1 0 4 0 2 2 0 1 0-4 0Z"></path><path d="M15 17a2 2 0 1 0 4 0 2 2 0 1 0-4 0Z"></path><path d="M19 17h-4"></path><path d="M9 17H5"></path><path d="M7 14v-3a4 4 0 0 1 4-4h2"></path><path d="M17 10h-4"></path><path d="M21 10a2 2 0 1 0-4 0 2 2 0 1 0 4 0Z"></path><path d="M7 7a2 2 0 1 0-4 0 2 2 0 1 0 4 0Z"></path></svg>
+              </div>
+              <div class="interest-content">
+                <h3>Remote Sensing</h3>
+                <p>Satellite imagery analysis, spectral analysis, and environmental monitoring</p>
+              </div>
+            </div>
+            
+            <div class="interest-item">
+              <div class="interest-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16z"></path><path d="M12 8a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M20 12h2"></path><path d="M2 12h2"></path></svg>
+              </div>
+              <div class="interest-content">
+                <h3>Geospatial Artificial Intelligence</h3>
+                <p>Machine learning applications for geospatial data and predictive modeling</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Research Experience Section -->
+        <section id="research" class="section">
+          <h2 class="section-title">Research Experience</h2>
+          <div class="section-content">
+            <div class="research-item">
+              <h3>Dynamics of Shoreline Changes on Bhasan Char Island, Bangladesh</h3>
+              <p class="meta">Undergraduate Research Project | 2023</p>
+              <div class="research-content">
+                <p style="text-align: justify;">Delineating shorelines over time is fundamental in understanding and managing coastal dynamics and resources effectively. Despite its importance, comprehensive research is lacking, particularly in regions like Bhasan Char Island, Bangladesh, undergoing significant morphological changes. This study employs the Digital Shoreline Analysis System (DSAS) and Geographic Information System (GIS) to meticulously analyze shoreline changes on Bhasan Char Island from 2005 to 2023, with a specific focus on erosion and accretion trends across various segments. The investigation delineated the shoreline variation into four distinct sections. The rate of shoreline change, in the form of erosion and accretion, was assessed by four statistical parameters: Endpoint Rate (EPR), Net Shoreline Movement (NSM), Linear Regression Rate (LRR), and Shoreline Change Envelope (SCE). The results showed that the southwestern segment of Bhasan Char Island has experienced substantial erosion with an average NSM of −185.01 m. However, the northeastern part of the char has shown significant accretion, with an NSM of 3984.36 m. The study also used the EPR method to quantify shoreline movement, revealing accretion characteristics in approximately 67.54% of all transects, with a mean accretion rate of 157.63 m/year. In contrast, erosion was observed in 15.78% of all transects, with a mean erosion rate of −34.81 m/year. The results of the current study provide crucial insights into the dynamic coastal processes of Bhasan Char, emphasizing the necessity for informed coastal management and planning.</p>
+                <p class="meta">Supervisor: Abu Bokkar Siddique</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Conference Papers Section -->
+        <section id="conference" class="section">
+          <h2 class="section-title">Conference Papers & Presentations</h2>
+          <div class="section-content">
+            <div class="conference-item">
+              <h3>International Conference on Oceanography 2024</h3>
+              <p class="meta">Poster Presentation | January 2024</p>
+              <div class="conference-button">
+                <a href="http://dx.doi.org/10.13140/RG.2.2.22015.01447" target="_blank" class="btn btn-secondary btn-sm">
+                  View DOI
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>            
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+          <h2 class="section-title">Projects</h2>
+          <div class="gateway-grid">
+            <!-- Academic Projects Gateway Card -->
+            <div class="gateway-card">
+              <div class="gateway-card__image-container">
+                <img src="images/Project preview images/1.webp" alt="A professional academic setting" class="gateway-card__image">
+              </div>
+              <div class="gateway-card__content">
+                <h3 class="gateway-card__title">Academic Projects</h3>
+                <div class="gateway-card__description">
+                  <p>In-depth research and coursework applying geospatial principles to solve complex problems.</p>
+                </div>
+                <a href="Academic Project/academic_project.html" class="btn btn-primary">View Collection</a>
+              </div>
+            </div>
+
+            <!-- Personal Projects Gateway Card -->
+            <!--
+            <div class="gateway-card">
+              <div class="gateway-card__image-container">
+                <img src="images/Project preview images/2.webp" alt="A person working on a creative project" class="gateway-card__image">
+              </div>
+              <div class="gateway-card__content">
+                <h3 class="gateway-card__title">Personal Projects</h3>
+                <div class="gateway-card__description">
+                  <p>Explorations in geospatial technology driven by curiosity and a passion for self-led learning.</p>
+                </div>
+                <a href="#" class="btn btn-primary">View Collection</a>
+              </div>
+            </div>
+            -->
+            
+            <!-- Map Design Gateway Card -->
+            <div class="gateway-card">
+              <div class="gateway-card__image-container">
+                <img src="images/Project preview images/3.webp" alt="A collection of beautifully designed maps" class="gateway-card__image">
+              </div>
+              <div class="gateway-card__content">
+                <h3 class="gateway-card__title">Map Design</h3>
+                <div class="gateway-card__description">
+                  <p>A gallery focused on the art and science of cartography and visual storytelling.</p>
+                </div>
+                <a href="map-design/map-design.html" class="btn btn-primary">View Collection</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Field Works Section -->
+        <section id="fieldtrips" class="section">
+          <h2 class="section-title">Field Works</h2>
+          <div class="field-trip-tabs-container">
+            <div class="field-trip-tabs">
+              <button class="tab-link active" data-tab="coxs-bazar">Cox's Bazar</button>
+              <button class="tab-link" data-tab="kuakata">Kuakata</button>
+              <button class="tab-link" data-tab="sundarban">Sundarban</button>
+              <button class="tab-link" data-tab="saint-martin">Saint Martin's</button>
+            </div>
+          </div>
+          <div class="field-trip-content-wrapper">
+            <div id="coxs-bazar" class="tab-content active">
+              <div class="fieldtrip-item">
+                <p class="meta">2023</p>
+                <div class="fieldtrip-content">
+                  <div class="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/Field_Work/2023_Coxs_Bazar/1.webp" alt="Cox's Bazar Field Trip - 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Field_Work/2023_Coxs_Bazar/2.webp" alt="Cox's Bazar Field Trip - 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Field_Work/2023_Coxs_Bazar/3.webp" alt="Cox's Bazar Field Trip - 3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Field_Work/2023_Coxs_Bazar/4.webp" alt="Cox's Bazar Field Trip - 4">
+                      </div>
+                    </div>
+                    <button class="carousel-control prev" aria-label="Previous slide">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+                    <button class="carousel-control next" aria-label="Next slide">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                  </div>
+                  <div class="fieldtrip-details">
+                    <ul>
+                      <li class="custom-bullet">Used quadrant and transect sampling techniques to collect various types of plastic materials from the beach</li>
+                      <li class="custom-bullet">Analyzed the collected samples and found that polythene and plastic bottles were the most prominent types of waste</li>
+                      <li class="custom-bullet">Explored the Bakkhali River estuary, observing various types of aquaculture including: Seaweed farming, Oyster farming, Green mussel farming, Vetki and Khoral culture</li>
+                      <li class="custom-bullet">Collected water data using a mini CTD to measure key parameters like temperature, salinity, and conductivitys</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="kuakata" class="tab-content">
+              <div class="fieldtrip-item">
+                <p class="meta">2022</p>
+                <div class="fieldtrip-content">
+                  <div class="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/Field_Work/2022_Kuakata/1.webp" alt="Kuakata Field Trip - 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Field_Work/2022_Kuakata/2.webp" alt="Kuakata Field Trip - 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Field_Work/2022_Kuakata/3.webp" alt="Kuakata Field Trip - 3">
+                      </div>
+                    </div>
+                    <button class="carousel-control prev" aria-label="Previous slide">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+                    <button class="carousel-control next" aria-label="Next slide">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                  </div>
+                  <div class="fieldtrip-details">
+                    <ul>
+                      <li class="custom-bullet">Explored facilities and observed ongoing research and operations at the Bangladesh Fish Research Institute(BFRI).</li>
+                      <li class="custom-bullet">Used a CTD instrument to collect and analyze data on temperature, salinity, and conductivity from various sites</li>
+                      <li class="custom-bullet">Employed DO meter, pH meter, and turbidity meter for in-situ analysis of water quality parameters</li>
+                      <li class="custom-bullet">Collected sediment samples using an Ekman grab sampler for texture and composition analysis</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="sundarban" class="tab-content">
+              <div class="fieldtrip-item">
+                <p class="meta">2020</p>
+                <div class="fieldtrip-content">
+                  <div class="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/Field_Work/2020_Sundarban/1.webp" alt="Sundarban Field Trip - 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Field_Work/2020_Sundarban/2.webp" alt="Sundarban Field Trip - 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Field_Work/2020_Sundarban/3.webp" alt="Sundarban Field Trip - 3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Field_Work/2020_Sundarban/4.webp" alt="Sundarban Field Trip - 4">
+                      </div>
+                    </div>
+                    <button class="carousel-control prev" aria-label="Previous slide">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+                    <button class="carousel-control next" aria-label="Next slide">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                  </div>
+                  <div class="fieldtrip-details">
+                    <ul>
+                      <li class="custom-bullet">Collected sediment samples using a grab sampler for particle size and organic content analysis</li>
+                      <li class="custom-bullet">Collected plankton samples at Trikon Island to study biodiversity and primary productivity</li>
+                      <li class="custom-bullet">Collected temperature, salinity, and pH data from various locations for a comprehensive analysis of water quality</li>
+                      <li class="custom-bullet">Engaged with local fishermen at Dublar Char to understand traditional practices and conservation challenges</li>
+                      <li class="custom-bullet">Observed wild deer at Hiron Point, noting biodiversity within the Sundarbans ecosystem</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="saint-martin" class="tab-content">
+              <div class="fieldtrip-item">
+                <p class="meta">2019</p>
+                <div class="fieldtrip-content">
+                  <div class="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/Field_Work/2019_Saint_Martin/1.webp" alt="Saint Martin's Island - 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Field_Work/2019_Saint_Martin/2.webp" alt="Saint Martin's Island - 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Field_Work/2019_Saint_Martin/3.webp" alt="Saint Martin's Island - 3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Field_Work/2019_Saint_Martin/4.webp" alt="Saint Martin's Island - 4">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/Field_Work/2019_Saint_Martin/5.webp" alt="Saint Martin's Island - 5">
+                      </div>
+                    </div>
+                    <button class="carousel-control prev" aria-label="Previous slide">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+                    <button class="carousel-control next" aria-label="Next slide">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                  </div>
+                  <div class="fieldtrip-details">
+                    <ul>
+                      <li class="custom-bullet">Observed coral ecosystems around Saint Martin Island, focusing on biodiversity and conservation challenges</li>
+                      <li class="custom-bullet">Measured temperature, salinity, and pH using water multiparameter at various coastal sites</li>
+                      <li class="custom-bullet">Visited the Fish Landing Center to observe local fisheries operations</li>
+                      <li class="custom-bullet">Visited Radiant Fish World, the first sea aquarium in Bangladesh, to study marine aquatic biodiversity</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+          <h2 class="section-title">Education</h2>
+          <div class="section-content">
+            <div class="education-item">
+              <h3>Bachelor of Science in Oceanography</h3>
+              <p class="meta">Shahjalal University of Science & Technology, Sylhet</p>
+              <p>CGPA: 3.52/4.00</p>
+              <div class="education-details">
+                <h4 class="courses-title">Relevant Coursework</h4>
+                <div class="courses-grid">
+                  <ul class="course-column">
+                    <li>GIS Technology</li>
+                    <li>Remote Sensing and Satellite Oceanography</li>
+                    <li>Paleoceanography</li>
+                  </ul>
+                  <ul class="course-column">
+                    <li>Estuarine Dynamics</li>
+                    <li>Ocean Geophysics</li>
+                    <li>Environmental Management</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Beyond Academics Section -->
+        <section id="beyond" class="section">
+          <h2 class="section-title">Beyond Academics</h2>
+          <div class="section-content">
+            <div class="beyond-item">
+              <h3>Art Gallery</h3>
+              <div class="beyond-content">
+                <div class="drawing-carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/drawing/prova.jpeg" alt="Drawing - Prova" class="carousel-image">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/drawing/birds.jpg" alt="Drawing - Birds" class="carousel-image">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/drawing/eyes.jpg" alt="Drawing - Eyes" class="carousel-image">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/drawing/mosaddek.jpg" alt="Drawing - Mosaddek" class="carousel-image">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/drawing/purna.jpg" alt="Drawing - Purna" class="carousel-image">
+                    </div>
+                  </div>
+                  <button class="carousel-control prev" aria-label="Previous drawing">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                  </button>
+                  <button class="carousel-control next" aria-label="Next drawing">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  </button>
+                </div>
+                <div class="beyond-details">
+                  <ul>
+                    <li class="custom-bullet">Passionate about portrait and character drawing</li>
+                    <li class="custom-bullet">Specializes in detailed eye and facial studies</li>
+                    <li class="custom-bullet">Creates both realistic and stylized artwork</li>
+                    <li class="custom-bullet">Regular practice in various drawing techniques</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- References Section -->
+        <section id="references" class="section">
+          <h2 class="section-title">References</h2>
+          <div class="section-content">
+            <div class="references-grid">
+              <div class="gateway-card">
+                <div class="gateway-card__content">
+                  <h3 class="gateway-card__title">Dr. Subrata Sarker</h3>
+                  <p class="reference-designation">Associate Professor</p>
+                  <p class="reference-department">Department of Oceanography</p>
+                  <p class="reference-university">Shahjalal University of Science & Technology</p>
+                  <a href="#" data-email="subratasrk-ocg@sust.edu" class="reference-email email-link">
+                    <i class="fas fa-envelope"></i> subratasrk-ocg@sust.edu
+                  </a>
+                </div>
+              </div>
+              <div class="gateway-card">
+                <div class="gateway-card__content">
+                  <h3 class="gateway-card__title">Abu Bokkar Siddique</h3>
+                  <p class="reference-designation">Lecturer</p>
+                  <p class="reference-department">Department of Oceanography</p>
+                  <p class="reference-university">Shahjalal University of Science & Technology</p>
+                  <a href="#" data-email="absiddique-ocg@sust.edu" class="reference-email email-link">
+                    <i class="fas fa-envelope"></i> absiddique-ocg@sust.edu
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <p>&copy; 2025 Pretom Saha. All rights reserved.</p>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <!-- PDF Modal -->
+  <div id="pdfModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <iframe id="pdfViewer" src="" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Mobile Navigation Toggle -->
+  <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle navigation">
+    <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+  </button>
+
+  <!-- Add GSAP before closing body tag -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="js/main.js"></script>
+  
+  <!-- Email handling script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Function to detect mobile devices
+      function isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      }
+
+      // Function to handle email clicks
+      function handleEmailClick(e) {
+        e.preventDefault();
+        const email = this.getAttribute('data-email');
+        
+        if (isMobileDevice()) {
+          // For mobile devices, use mailto to open default mail app
+          window.location.href = `mailto:${email}`;
+        } else {
+          // For desktop, open Gmail compose in new tab
+          window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, '_blank');
+        }
+      }
+
+      // Add click handlers to all email links
+      document.querySelectorAll('.email-link').forEach(link => {
+        link.addEventListener('click', handleEmailClick);
+      });
+    });
+  </script>
+</body>
+</html>
