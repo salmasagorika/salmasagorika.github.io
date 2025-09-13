@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Design Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="map-design.css">
+</head>
+<body>
+    <a href="../index.html" class="back-button" aria-label="Back to Portfolio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: white;">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+    </a>
+
+    <!-- The Modal -->
+    <div id="imageModal" class="modal">
+        <button class="nav-arrow prev-arrow" aria-label="Previous image">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Full-size map view">
+        </div>
+        <button class="nav-arrow next-arrow" aria-label="Next image">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+        <div class="zoom-controls">
+            <button class="zoom-btn zoom-in" aria-label="Zoom in">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+            </button>
+            <button class="zoom-btn zoom-out" aria-label="Zoom out">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <main class="gallery-grid">
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item">
+            <img src="../images/Map Design/Chittagong.svg" onerror="this.onerror=null; this.src='https://placehold.co/600x800/ccc/ffffff?text=Image+Not+Found';">
+            <div class="image-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item">
+            <img src="../images/Map Design/sex ratio map.svg" onerror="this.onerror=null; this.src='https://placehold.co/600x800/ccc/ffffff?text=Image+Not+Found';">
+            <div class="image-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item">
+            <img src="../images/Map Design/Drought-monitoring.png" onerror="this.onerror=null; this.src='https://placehold.co/600x800/ccc/ffffff?text=Image+Not+Found';">
+            <div class="image-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <!--
+        <div class="gallery-item">
+            <img src="https://placehold.co/600x800/293241/98C1D9?text=Ancient+World+Map" onerror="this.onerror=null; this.src='https://placehold.co/600x800/ccc/ffffff?text=Image+Not+Found';">
+            <div class="image-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        -->
+        <!-- Gallery Item 5 -->
+        <!--
+        <div class="gallery-item">
+            <img src="https://placehold.co/600x800/3D5A80/E0FBFC?text=Geological+Survey" onerror="this.onerror=null; this.src='https://placehold.co/600x800/ccc/ffffff?text=Image+Not+Found';">
+            <div class="image-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        -->
+        <!-- Gallery Item 6 -->
+        <!--
+        <div class="gallery-item">
+            <img src="https://placehold.co/600x800/EE6C4D/98C1D9?text=Stellar+Cartography" onerror="this.onerror=null; this.src='https://placehold.co/600x800/ccc/ffffff?text=Image+Not+Found';">
+            <div class="image-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        -->
+    </main>
+
+    <script src="map-design.js"></script>
+</body>
+</html> 
