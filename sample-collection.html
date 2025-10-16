@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Collection</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    html, body { overflow: auto !important; }
+    img { border-radius: 0 !important; }
+    .sc-container { max-width: 1200px; margin: 0 auto; padding: 24px 16px; }
+    .sc-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+    .sc-title { font-size: 1.6rem; font-weight: 500; }
+    .sc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    .sc-card { position: relative; overflow: hidden; border: 1px solid #eaeaea; background:#fff; }
+    .sc-card img { width: 100%; height: 220px; object-fit: cover; display: block; }
+    @media (max-width: 1024px) { .sc-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 768px)  { .sc-grid { grid-template-columns: repeat(2, 1fr); } .sc-card img { height: 200px; } }
+    @media (max-width: 480px)  { .sc-grid { grid-template-columns: repeat(1, 1fr); } .sc-card img { height: 220px; } }
+    .sc-back { display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border:1px solid #c1121f; color:#141413; text-decoration:none; }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const grid = document.querySelector('.sc-grid');
+      const images = [
+        'images/sample collection/2.jpg',
+        'images/sample collection/5.jpg',
+        'images/sample collection/6.jpg',
+        'images/sample collection/7.jpg',
+        'images/sample collection/8.jpg',
+        'images/sample collection/9.jpg',
+        'images/sample collection/10.jpg',
+        'images/sample collection/11.jpg',
+        'images/sample collection/12.jpg',
+        'images/sample collection/13.jpg',
+        'images/sample collection/14.jpg',
+        'images/sample collection/15.jpg'
+      ];
+      images.forEach(src => {
+        const a = document.createElement('a');
+        a.href = src;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.className = 'sc-card';
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = 'Sample collection image';
+        img.loading = 'lazy';
+        a.appendChild(img);
+        grid.appendChild(a);
+      });
+    });
+  </script>
+  </head>
+<body>
+  <div class="sc-container">
+    <div class="sc-header">
+      <div class="sc-title">Sample Collection</div>
+      <a href="index.html#projects" class="sc-back">&#8592; Back</a>
+    </div>
+    <div class="sc-grid"></div>
+  </div>
+</body>
+</html>
+
+

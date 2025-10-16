@@ -41,7 +41,7 @@
           
           <div class="profile-buttons">
             <button class="btn btn-primary" id="cvButton">CV</button>
-            <a href="#" data-email="salmasagorika105@gmail.com" class="btn btn-secondary email-link">Email</a>
+            <a href="#" data-email="salmaakter.research@gmail.com" class="btn btn-secondary email-link">Email</a>
           </div>
         </div>
         
@@ -74,7 +74,7 @@
           <h1 class="profile-name">Salma Akter</h1>
           <div class="profile-buttons">
             <button class="btn btn-primary" id="cvButtonMain">CV</button>
-            <a href="#" data-email="salmasagorika105@gmail.com" class="btn btn-secondary email-link">Email</a>
+            <a href="#" data-email="salmaakter.research@gmail.com" class="btn btn-secondary email-link">Email</a>
           </div>
         </div>
 
@@ -152,13 +152,11 @@
           <h2 class="section-title">Conference Papers & Presentations</h2>
           <div class="section-content">
             <div class="conference-item">
-              <h3>International Conference on Oceanography 2024</h3>
-              <p class="meta">Poster Presentation | January 2024</p>
+              <h3>International Conference on Sustainable Fisheries 2025</h3>
+              <p class="meta">Poster Presentation | September 2025</p>
               <div class="conference-button">
-                <a href="http://dx.doi.org/10.13140/RG.2.2.22015.01447" target="_blank" class="btn btn-secondary btn-sm">
-                  View DOI
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                </a>
+                <a href="images/poster/1.jpg" target="_blank" class="btn btn-secondary btn-sm">View Poster</a>
+                <a href="images/poster/2.jpg" target="_blank" class="btn btn-secondary btn-sm" style="margin-left: 8px;">View Certificate</a>
               </div>
             </div>            
           </div>
@@ -176,7 +174,7 @@
               <div class="gateway-card__content">
                 <h3 class="gateway-card__title">Academic Projects</h3>
                 <div class="gateway-card__description">
-                  <p>In-depth research and coursework applying geospatial principles to solve complex problems.</p>
+                  <p>Marine and benthic ecology studies, coastal dynamics and pollution assessments, with GIS and remote sensing analyses.</p>
                 </div>
                 <a href="Academic Project/academic_project.html" class="btn btn-primary">View Collection</a>
               </div>
@@ -201,14 +199,14 @@
             <!-- Sample Collection Gateway Card -->
             <div class="gateway-card">
               <div class="gateway-card__image-container">
-                <img src="images/Project preview images/3.webp" alt="A collection of field samples and specimens" class="gateway-card__image">
+                <img src="images/sample collection/2.jpg" alt="A collection of field samples and specimens" class="gateway-card__image">
               </div>
               <div class="gateway-card__content">
                 <h3 class="gateway-card__title">Sample Collection</h3>
                 <div class="gateway-card__description">
                   <p>Field samples, sediment cores, and biological specimens collected during research expeditions.</p>
                 </div>
-                <a href="map-design/map-design.html" class="btn btn-primary">View Collection</a>
+                <a href="sample-collection.html" class="btn btn-primary">View Collection</a>
               </div>
             </div>
           </div>
@@ -449,7 +447,32 @@
         <section id="beyond" class="section">
           <h2 class="section-title">Extra Curricular Activities</h2>
           <div class="section-content">
-            <!-- Content to be added later -->
+
+            <div class="beyond-item">
+              <h3>Sports &amp; Athletics</h3>
+              <ul>
+                <li>Actively participated in sports throughout academic life.</li>
+                <li>Achieved 3rd place in University Marathon.</li>
+                <li>Winner of Volleyball Team competitions.</li>
+                <li>1st Runner-up in Handball tournaments.</li>
+              </ul>
+            </div>
+
+            <div class="beyond-item">
+              <h3>University Clubs &amp; Leadership</h3>
+              <ul>
+                <li>SUST Career Club | Departmental Executive – SUST, Sylhet (March 2019 – February 2020)</li>
+                <li>Chokh Film Society | Workshop &amp; Study Circle Secretary – SUST, Sylhet (October 2022 – November 2023)</li>
+              </ul>
+            </div>
+
+            <div class="beyond-item">
+              <h3>Workshops &amp; Volunteering</h3>
+              <ul>
+                <li>Volunteered at “International Symposium on Marine Resource Management” – Shahjalal University of Science and Technology, Sylhet.</li>
+                <li>Attended Basic Cinematography and Editing Workshop</li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -497,6 +520,19 @@
     <div class="modal-content">
       <span class="close-modal">&times;</span>
       <iframe id="pdfViewer" src="" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Sample Collection Gallery Modal -->
+  <div id="galleryModal" class="modal">
+    <div class="modal-content" style="max-width: 1000px;">
+      <span class="close-gallery" aria-label="Close gallery">&times;</span>
+      <div class="gallery-viewer">
+        <button class="gallery-prev" aria-label="Previous image">&#10094;</button>
+        <img id="galleryImage" src="" alt="Sample Collection Gallery" style="max-width:100%; max-height:80vh; display:block; margin:0 auto;" />
+        <button class="gallery-next" aria-label="Next image">&#10095;</button>
+      </div>
+      <div class="gallery-thumbs" id="galleryThumbs" style="display:flex;gap:8px;overflow-x:auto;margin-top:12px;"></div>
     </div>
   </div>
 
