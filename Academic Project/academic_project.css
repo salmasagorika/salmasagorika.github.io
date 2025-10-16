@@ -23,6 +23,7 @@
   width: 100%;
   height: 230px;
   object-fit: cover;
+  object-position: left center;
   display: block;
 }
 
@@ -80,7 +81,7 @@
 .btn-view {
   display: block;
   width: 100%;
-  background: #b71c1c;
+  background: #2D5F72;
   color: #fff;
   text-align: center;
   padding-top: 0.75em;
@@ -98,7 +99,7 @@
 }
 
 .btn-view:hover {
-  background: #a31515;
+  background: #1a4a5c;
 }
 
 @media (max-width: 900px) {
@@ -119,9 +120,9 @@
     left: 2rem;
     width: 2.4rem;
     height: 2.4rem;
-    background: #C1121F;
+    background: #2D5F72;
     color: #fff;
-    border: 2px solid #C1121F;
+    border: 2px solid #2D5F72;
     border-radius: 0;
     display: flex;
     align-items: center;
@@ -133,7 +134,7 @@
 }
 
 .back-button:hover, .back-button:focus {
-    background: #a00;
+    background: #1a4a5c;
 }
 
 .back-button svg {
@@ -148,4 +149,120 @@
     .back-button {
         display: none;
     }
+}
+
+/* PDF Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  overflow: hidden !important;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show {
+  opacity: 1;
+}
+
+.modal-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: white;
+  padding: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden !important;
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+  transform: scale(1);
+}
+
+.close-modal {
+  position: fixed;
+  right: 6px;
+  top: 9px;
+  width: 40px;
+  height: 40px;
+  background-color: #FF0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+  z-index: 1002;
+  transition: all 0.2s ease;
+  border: none;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.close-modal:hover {
+  background-color: #CC0000;
+}
+
+.modal.show .close-modal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#pdfViewer {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: white;
+  object-fit: contain;
+}
+
+/* Hide scrollbars for all browsers */
+.modal-content::-webkit-scrollbar,
+#pdfViewer::-webkit-scrollbar,
+.modal::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.modal-content,
+#pdfViewer,
+.modal,
+body {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  overflow: hidden !important;
+}
+
+@media (max-width: 768px) {
+  .close-modal {
+    right: 10px;
+    top: 10px;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+  }
+
+  .modal-content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #pdfViewer {
+    height: 100%;
+  }
 } 
