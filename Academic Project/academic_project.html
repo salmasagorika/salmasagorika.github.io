@@ -80,11 +80,46 @@
     </div>
   </div>
 
+  <!-- PDF Selection Modal -->
+  <div id="pdfSelectionModal" class="pdf-selection-overlay">
+    <div class="modal-content selection-modal">
+      <span class="close-modal">&times;</span>
+      <div class="pdf-selection-container">
+        <h3>Select PDF to View</h3>
+        <div class="pdf-options">
+          <button class="pdf-option" data-pdf="Coastal and Marine Pollution.pdf">
+            <div class="pdf-icon">📄</div>
+            <div class="pdf-info">
+              <h4>Coastal and Marine Pollution</h4>
+              <p>Main project report</p>
+            </div>
+          </button>
+          <button class="pdf-option" data-pdf="GIS.pdf">
+            <div class="pdf-icon">🗺️</div>
+            <div class="pdf-info">
+              <h4>GIS Analysis</h4>
+              <p>Geographic Information System analysis</p>
+            </div>
+          </button>
+          <button class="pdf-option" data-pdf="Remote Sensing.pdf">
+            <div class="pdf-icon">🛰️</div>
+            <div class="pdf-info">
+              <h4>Remote Sensing</h4>
+              <p>Satellite imagery analysis</p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- PDF Modal -->
   <div id="pdfModal" class="modal">
     <div class="modal-content">
       <span class="close-modal">&times;</span>
-      <iframe id="pdfViewer" src="" width="100%" height="100%" frameborder="0"></iframe>
+      <div class="pdf-container">
+        <iframe id="pdfViewer" src="" width="100%" height="100%" frameborder="0"></iframe>
+      </div>
     </div>
   </div>
 
