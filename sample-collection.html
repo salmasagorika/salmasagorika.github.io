@@ -23,19 +23,25 @@
     document.addEventListener('DOMContentLoaded', function() {
       const grid = document.querySelector('.sc-grid');
       const images = [
-        'images/sample collection/2.jpg',
-        'images/sample collection/5.jpg',
-        'images/sample collection/6.jpg',
-        'images/sample collection/7.jpg',
-        'images/sample collection/8.jpg',
-        'images/sample collection/9.jpg',
-        'images/sample collection/10.jpg',
-        'images/sample collection/11.jpg',
-        'images/sample collection/12.jpg',
-        'images/sample collection/13.jpg',
-        'images/sample collection/14.jpg',
-        'images/sample collection/15.jpg'
-      ];
+  'images/sample collection/2.jpg',
+  'images/sample collection/5.jpg',
+  'images/sample collection/6.jpg',
+  'images/sample collection/7.jpg',
+  'images/sample collection/8.jpg',
+  'images/sample collection/9.jpg',
+  'images/sample collection/10.jpg',
+  'images/sample collection/benthos/17.jpeg',
+  'images/sample collection/12.jpg',
+  'images/sample collection/13.jpg',
+  'images/sample collection/benthos/16.jpeg',
+  'images/sample collection/15.jpg',
+
+  // newly added benthos images
+  'images/sample collection/benthos/18.jpeg',
+  'images/sample collection/benthos/20.jpeg',
+  'images/sample collection/benthos/21.jpeg'
+];
+
       images.forEach(src => {
         const a = document.createElement('a');
         a.href = src;
